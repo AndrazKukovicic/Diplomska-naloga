@@ -1,7 +1,9 @@
 \documentclass{beamer}
+\newcommand{\FF}{$\mathcal{F}$ }
 %Information to be included in the title page:
-\title{Sample title}
-\author{Andraž Kukovičič}
+\title{Uvod v univerzalno algebro in Mal'cev pogoj}
+\author{Andraž Kukovičič \\[5mm]{\small Mentorica: izr. prof. dr. Ganna Kudryavtseva \\}}
+
 \institute{Fakulteta za matematiko in fiziko}
 \date{2. 12. 2024}
 
@@ -10,8 +12,84 @@
 \frame{\titlepage}
 
 \begin{frame}
-\frametitle{Sample frame title}
-This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\frametitle{Definicija algebre}
+
+\emph{Tip} ali \emph{jezik} algebre je množica \mathcal{F} funkcijskih simbolov. Vsak simbol $f \in 
+\mathcal{F}$ ima prirejeno nenegativno celo število $n$, ki ga imenujemo \emph{-arnost} ali 
+\emph{rang} $f$. \\
+\emph{Algebra} $\mathbf{A}$ tipa $\mathcal{F}$ je urejeni par $ \left(A, F\right)$, kjer je $A$ neprazna množica 
+in $F$ družina operacij s končnim številom argumentov na $A$ indeksirana z jezikom \FF tako, 
+da je vsakemu $n$-arnemu funkcijskemu simbolu $f$ iz \FF prirejena $n$-arna operacija $f^\mathbf{A}$ 
+na $A$, ki jo imenujemo fundamnetalna operacija algebre $\mathbf{A}$ \\
+Množico $A$ imenujemo univerzalna množica algebre $\mathbf{A}  = \left(A, F\right)$. \\
 \end{frame}
 
+\begin{frame}
+    \frametitle{Primeri algeber}
+    \begin{enumerate}
+        \item[Grupe] Grupa $\mathbf{G}$ je algebra $\left(G, \cdot, ^{-1}, 1\right)$ v kateri veljajo naslednje
+        \item[] identitete:
+            \item[G1] $x \cdot \left(y \cdot z\right) = \left(x \cdot y\right) \cdot z$
+            \item[G2] $x \cdot 1 = 1 \cdot x = x$
+            \item[G3] $x \cdot x^{-1} = x^{-1} \cdot x = 1$.
+        \item[Polgrupe] so algebre $\left(G, \cdot\right)$
+        \item[Monoidi] so algebre  $\left(M, \cdot, 1\right)$
+        \item[Mreže] so algebre $\left(L,\vee, \wedge\right)$ 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mreže}
+    
+    Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je mreža, če zadošča:\\
+    \begin{enumerate} 
+        \item[M1] $x \vee y = y \vee x$
+        \item[M2] $x\vee \left(y \vee z\right) = \left(x \vee y\right)\vee z$
+        \item[M3] $x \vee x = x$
+        \item[M4] $x = x \vee \left(x \wedge y\right)$. \\
+    \end{enumerate}
+    Ekvivalentno: \\
+        Delno urejena množica $M$ je mreža natanko takrat ko za vsaka $a, b \in M$ obstajata $sup\{a, b\}$ 
+        in $inf\{a, b\}$.\\
+    Primer:\\
+    $M = \mathbb{N}$, z $\vee$ označimo najmanjši skupni večkratnik, z $\wedge$ pa največji skupni delitelj
+    števil. Potem je $\left(\mathbb{N}, \vee, \wedge\right)$ mreža. 
+    
+\end{frame}
+\begin{frame}
+\frametitle{Kongruence}
+Naj bo $\mathbf{A}$ algebra tipa $\mathcal{F}$ in naj bo $\theta \in Eq(A)$. Tedaj je $\theta$ \emph{kongruenca} 
+na $\mathbf{A}$, če zadošča naslednjemu pogoju: \\
+Za vsak $n$-arni funkcijski simbol $f \in \mathcal{F}$ in elemente $a_i, b_i \in A$, če velja $a_i\theta b_i$ 
+za vse $1 \leq i \leq n$, potem velja $f^\mathbf{A}\left(a_1, \dots, a_n\right) \theta 
+f^\mathbf{A}\left(b_1, \dosts, b_n\right)$.\\
+Z $Con A$ označimo množico vseh kongruenc algebre $A$.
+\\
+
+Če $Con A$ opremimo z operacijama $\wedge$ in $\vee$, ki sta definirani:\\
+$\theta_1 \wedge \theta_2 = \theta_1 \cap \theta_2$ in $\theta_1 \vee \theta_2 = \theta_1 \cup \left(\theta_1 \circ \theta_2\right)
+\cup \left(\theta_1 \circ \theta_2 \circ \theta_1\right) \cup \dots$ postane $Con A$ mreža.
+\end{frame}
+\begin{frame}
+Primer:\\
+Naj bo $\mathbf{G}$ grupa. \\
+Če je $\theta \in Con \mathbf{G}$ potem je $1/ \theta$ 
+univerzalna množica podgrupe edinke grupe $\mathbf{G}$ in velja
+$a, b \in G$ velja $\left(a, b\right) \in \theta \Leftrightarrow a \cdot b^{-1} \in 1/\theta$.\\
+Če je $\mathbf{N} \vartriangleleft \mathbf{G}$, potem je relacija na $G$ definirana:
+$\left(a,b\right) \in \theta \Leftrightarrow a \dots b^{-1} \in N$ kongruenca na $\mathbf{G}$ in $1/\theta= N$\\.
+Preslikava s predpisom $\theta \mapsto 1/\theta$ je bijekcija med kongruencami na $\mathbf{G}$ in edinkami grupe $\mathbf{G}$.\\
+\end{frame}
+
+\begin{frame}
+\frametitle{Mal'cev izrek}
+Algebra $\mathbf{A}$ je \emph{kongruenčno-permutabilna}, če vsak par kongruenc permutira: \\
+$\theta_1 \circ \theta_2 = \theta_2 \circ \theta_1$\\
+Neprazen razred $K$ algeber tipa $\mathcal{F}$ imenujemo \emph{raznoterost}, če je zaprt za podalgebre, 
+slike homomorfizmov in direkten produkte.
+\begin{enumerate}
+\item[Izrek]: Naj bo $V$ raznoterost tipa $\mathcalc{F}$. Raznoterost $V$ je kongruenčno-permutabilna
+natanko takrat, ko obstaja pogoj $p\left(x, y, z\right)$, da: \\ $$V \models p\left(x,x,y\right)=y$$ in $$V \models p\left(x,y,y\right)=x.$$
+\end{enumerate}
+\end{frame}
 \end{document}
