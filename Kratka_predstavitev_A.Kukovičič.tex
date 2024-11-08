@@ -5,6 +5,7 @@
 \usepackage{xcolor}
 \definecolor{darkseagreen}{RGB}{143, 188, 143}
 \setbeamercolor{item}{fg=gray}
+\setbeamertemplate{footline}[frame number]
 \newcommand{\FF}{$\mathcal{F}$ }
 %Information to be included in the title page:
 \title{Uvod v univerzalno algebro in Mal'cev pogoj}
@@ -89,21 +90,33 @@ Z $Con \mathbf{A}$ označimo množico vseh kongruenc algebre $\mathbf{A}$.
 Če $Con \mathbf{A}$ opremimo z operacijama $\wedge$ in $\vee$, ki sta definirani:\\
 $\theta_1 \wedge \theta_2 = \theta_1 \cap \theta_2$ in \\ 
 $\theta_1 \vee \theta_2 = \theta_1 \cup \left(\theta_1 \circ \theta_2\right)
-\cup \left(\theta_1 \circ \theta_2 \circ \theta_1\right) \cup \dots$ \\
-postane $Con \mathbf{A}$ mreža.
+\cup \left(\theta_1 \circ \theta_2 \circ \theta_1\right) \cup \left(\theta_1 \circ \theta_2 \circ \theta_1 \circ \theta_2\right) \cup \dots$ \\
+postane $Con \mathbf{A}$ mreža.\\
+Pri tem je $\theta_1 \vee \theta_2$ najmanjša kongruenca, ki vsebuje $\theta_1$ in $\theta_2$.
 \end{frame}
 
 \begin{frame}
     \textcolor{darkseagreen}{Primer:}\\
 Naj bo $\mathbf{G}$ grupa. \\
-Če je $\theta \in Con \mathbf{G}$ potem je $1/ \theta$ 
-univerzalna množica podgrupe edinke grupe $\mathbf{G}$ in velja
-$a, b \in G$ velja $\left(a, b\right) \in \theta \Leftrightarrow a \cdot b^{-1} \in 1/\theta$.\\
-Če je $\mathbf{N} \vartriangleleft \mathbf{G}$, potem je relacija na $G$ definirana:
-$\left(a,b\right) \in \theta \Leftrightarrow a \cdot b^{-1} \in N$ kongruenca na $\mathbf{G}$ in $1/\theta= N$.\\
-Preslikava s predpisom $\theta \mapsto 1/\theta$ je bijekcija med kongruencami na $\mathbf{G}$ in edinkami grupe $\mathbf{G}$.\\
+Če je $\theta \in Con \mathbf{G}$ potem z $\left[1\right]_\theta$ označimo ekvivalenčni razred enote $1$.\\
+$\left[1\right]_\theta$ je univerzalna množica podgrupe edinke grupe $\mathbf{G}$. \\~\\ 
+Za poljubna $a, b \in G$ velja $\left(a, b\right) \in \theta \Leftrightarrow a \cdot b^{-1} \in \left[1\right]_\theta$.\\
+Če je $\mathbf{N} \vartriangleleft \mathbf{G}$, potem je relacija na $G$ definirana z:
+$\left(a,b\right) \in \theta \Leftrightarrow a \cdot b^{-1} \in N$ kongruenca na $\mathbf{G}$ in $\left[1\right]_\theta= N$.\\~\\
+Preslikava s predpisom $\theta \mapsto \left[1\right]_\theta$ je bijekcija med kongruencami na $\mathbf{G}$ in edinkami grupe $\mathbf{G}$.\\
 \end{frame}
-
+\begin{frame}
+\frametitle{Identiteta}
+    \begin{block}{}
+        \emph{Identiteta} tipa $\mathcal{F}$ nad $X$ je izraz oblike $p\approx q$, kjer sta $p, q \in T\left(X\right)$. 
+    \end{block}
+    $T\left(X\right)$ je množica vseh termov tipa $\mathcal{F}$ nad $X$. Kjer je $X$ množica spremenljivk.\\~\\
+    Algebra $\mathbf{A}$ tipa $\mathcal{F}$ zadošča $p\left(x_1, \ldots, x_n\right)\approx q\left(x_1, \ldots, x_n\right)$,
+    če za vsako izbiro $a_1, \ldots, a_n \in A$ velja: $p^\mathbf{A}\left(a_1, \ldots, a_n\right) \approx q^\mathbf{A}\left(a_1, \ldots, a_n\right)$.\\
+    Oznaka: $\mathbf{A} \models p\approx q$.\\~\\
+    Razred algeber $K$ zadošča $p\approx q$, če vsaka članica $K$ zadošča $p\approx q$. \\
+    Oznaka: $K \models p\approx q$.
+\end{frame}
 \begin{frame}
 \frametitle{Mal'cev izrek}
 Algebra $\mathbf{A}$ je \emph{kongruenčno-permutabilna}, če vsak par kongruenc komutira: \\
@@ -113,8 +126,10 @@ slike homomorfizmov in direktne produkte.
 \pause
 \begin{block}{}
 \textcolor{darkseagreen}{Izrek:} Naj bo $V$ raznoterost tipa $\mathcalc{F}$. Raznoterost $V$ je kongruenčno-permutabilna
-natanko takrat, ko obstaja pogoj $p\left(x, y, z\right)$, da: \\ $$V \models p\left(x,x,y\right)=y$$ in $$V \models p\left(x,y,y\right)=x.$$
-\end{block}
+natanko takrat, ko obstaja term $p\left(x, y, z\right)$, da: \\ $$V \models p\left(x,x,y\right)\approx y$$ in $$V \models p\left(x,y,y\right)\approx x.$$
+\end{block}\\
+\textcolor{darkseagreen}{Primera:} Grupe, kolobarji.
+
 
 \end{frame}
 
