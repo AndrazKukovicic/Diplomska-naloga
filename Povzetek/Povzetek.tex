@@ -1,0 +1,67 @@
+V diplomski nalogi bom predstavil osnovne pojme univerzalne algebre skupaj s primeri, ki smo jih v dosedanjem študiju
+matematike že srečali. Postopno bom predstavil pojme in rezultate, ki bodo vodili do srža diplomske naloge:
+formulaciji in dokazu Mal'cevega izreka in terma, ki se imenuje po njem.
+Eden od ciljev univerzalne algebre je iskanje in uporaba skupnih lastnosti na prvi pogled popolnoma
+razližnih algebrskih struktur. To nam da nov, splošnejši in poenoten pogled na že znane strukture, hkrati pa lahko 
+posamezne primere na ta način predstavimo bolj ekonomično, z manj pisanja. 
+Spomnimo se naprimer primera dokazovanja izreka o izomorfizmu, ki smo ga v pri Algebri II prvič dokazali za grupe, nato 
+smo ga formulirali še za druge strukture npr. kolobarje, algebre, module. Pri tem smo običajno rekli, da dokaz poteka 
+enako le da ustrezno spremenimo oznake. Z uporabo univerzalne algebre bomo lahko tak dokaz za več različnih struktur 
+naredili popolnoma formalno. 
+Pred definicijo in poglobitvijo v glavno temo naloge si bomo ogledali še nekaj osnovnih rezultatov o mrežah, ki bodo 
+kasneje uporabljeni v nekaterih izrekih in dokazih. 
+
+Mreže 
+
+Definicija: Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je \emph{mreža}, če 
+za vsaka dva elementa iz $M$ veljajo naslednjim pogojem:\\
+\begin{enumerate} 
+    \item[M1] $x \vee y = y \vee x$ in $x \wedge y = y \wedge x$ (komutativnost)
+    \item[M2] $x\vee \left(y \vee z\right) = \left(x \vee y\right)\vee z$ in 
+    $\wedge \left(y \wedge z\right) = \left(x \wedge y\right)\wedge z$ (asociativnost)
+    \item[M3] $x \vee x = x$ in $x \wedge x = x$ (idempotentnost)
+    \item[M4] $x = x \vee \left(x \wedge y\right)$ in $x = x \wedge \left(x \vee y\right)$ (absorbcijsko pravilo).\\
+\end{enumerate}
+
+Pokažimo sedaj, da je definicija mreže ekvivalentna naslednji trditvi.
+Trditev: Delno urejena množica $M$ je mreža natanko takrat, ko za vsaka $x,y \in M$, v $M$ obstajata $\sup{x,y}$ in 
+$inf{x,y}$.
+Dokaz: Spomnimo se najprej kaj je delno urejena množica. To je množica $m$ z relacijo $\leq$, da za vse elemente 
+$x,y, z \in M$ velja: \begin{enumerate}
+    \item $x \leq x$ (refleksivnost)
+    \item Če je $x \leq y$ in $y \leq x$, sledi $x = y$. (antisimetričnost)
+    \item Če je $x \leq y$ in $y \leq z$, sledi $x \leq z$. (tranzitivnost)
+\end{enumerate}\\
+Dokazali bomo implikaciji v obe smeri. Najprej predpostavimo, da je $M$ mreža po definiciji in dokžimo trditev. 
+Definirajmo relacijo $\leq$: za $a, b \in M$ velja $a \leq b$ natanko takrat, ko je $a = a \wedge b$. 
+Najprej bomo preverili, da tako definirana relacija podaja delno ureditev na $M$, nato pa še obstoj $sup{a,b}$ in 
+$inf{a,b}$.
+Za prvi del moramo preveriti refleksivnost, antisimetričnost in tranzitivnost. 
+\begin{itemize}
+    \item[(r)] Ker je $a \wedge a = a$ sledi $a \leq a$.
+    \item[(a)] Če je $a\leq b$ in $b \leq a$ to pomeni, da je $a = a \wedge b$ in $b = b \wedge a$, torej je $a = b$.
+    \item[(t)] Če je  $a\leq b$ in $b \leq c$ to pomeni, da je $a = a \wedge b$ in $b = b \wedge c$, torej je 
+    $a = a\wedge b = a\wedge \left(b \wedge c\right)$ zaradi asociativnosti je slednje enako $\left(a \wedge b\right) 
+    \wedge c = a \wedge c$. Dobili smo $a = a \wedge c$, od tod pa po definiciji relacije $\leq$ $a \leq c$.
+\end{itemize}
+Pokazali smo, da je $M$ z relacijo $\leq$ delno urejena. Sedaj pokažimo še obsotoj supremov in infimov. 
+Iz $a = a \wedge \left(a \vee b\right)$ in $b = b \wedge \left(a \vee b\right)$ sledi $ a \leq a \vee b$ in $ b \leq
+a \vee b$ torej je $a \vee b$ zgornja meja tako za $a$, kot za $b$. Pokažimo še, da je $a \vee b$ najmanjša zgornja meja
+Če je $a \leq u$ in $b \leq u$ z neki $u \in M$, je po definiciji $\leq$ $a = a \wedge u$ in zato $a \vee u = 
+\left(a \wedge u \right) \vee u = u$ in podobno $b \vee u = u$, torej je $\left(a \wedge u\right) \wedge 
+\left(b \wedge u\right) = u \wedge u = u$. In zato $\left(a \vee b \right) \vee u = u$, od tu pa vstavimo $u$ v
+ $ \left(a \vee b\right) \wedge u = \left(a \vee b\right) \wedge \left( \left(a \vee b\right) \vee u\right) = 
+ a \vee b$ pri zadnji enakosti smo uporabili absorbcijsko pravilo. To nam da $ a \vee b \leq u$. Torej je res 
+ $a \vee b = sup{a, b}$. Podobno pokažemo, da je $a \wedge b = inf{a, b}$.\\
+ Dokažimo še obratno implikacijo torej, da iz trditve sledi definicija. Predpostavimo, da drži naša trditev in 
+ definirajmo operaciji $\wedge$ in $\vee$ takole: $a \wedge b := inf{a, b}$ in $a \vee b := sup{a, b}$.
+ Pokažimo, da tako definirana operacija $\vee$ zadošča pogojem M1 - M4.
+ \begin{enumerate}
+    \item[M1] Res velja $sup{a, b} = sup{b, a}$.
+    \item[M2] Imamo $a \vee \left(b \vee c\right)$ torej je $sup{a, sup{b, c}}$, kar je enako $sup{sup{a,b}, c}$ in zato 
+    $a \vee \left(b \vee c\right) = \left(a \vee b\right) \vee c$. 
+    \item[M3] Ker je $a = sup{a, a}$ je res $a \vee a = a$. 
+    \item[M4] $a = a \vee \left(a \wedge b\right)$ zapišemo kot $a = sup {a, inf{a, b}}$ kar je res, saj je $inf{a, b} 
+    \leq a$. 
+ \end{enumerate} 
+Podobno preverimo za operacijo $\wedge$.
