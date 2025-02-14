@@ -1,5 +1,40 @@
-V diplomski nalogi bom predstavil osnovne pojme univerzalne algebre skupaj s primeri, ki smo jih v dosedanjem študiju
-matematike že srečali. Postopno bom predstavil pojme in rezultate, ki bodo vodili do srža diplomske naloge:
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[slovene]{babel}
+\usepackage{amsfonts,amssymb,amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\def\qed{$\hfill\Box$}   % konec dokaza
+\def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
+\newtheorem{izrek}{Izrek}
+\newtheorem{trditev}{Trditev}
+\newtheorem{posledica}{Posledica}
+\newtheorem{lema}{Lema}
+\newtheorem{pripomba}{Pripomba}
+\newtheorem{definicija}{Definicija}
+\newtheorem{zgled}{Zgled}
+
+\title{Uvod v univerzalno algebro in Mal'cev pogoj \\ 
+\Large Povzetek diplomske naloge}
+\author{Andraž Kukovičič \\
+Fakulteta za matematiko in fiziko \\
+Oddelek za matematiko}
+\date{Študijsko leto 2024/25}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\maketitle
+
+\section{Uvod}
+V diplomski nalogi in njenem povzetku bom predstavil osnovne pojme univerzalne algebre skupaj s primeri, 
+ki smo jih v dosedanjem študijumatematike že srečali. 
+Postopno bom predstavil pojme in rezultate, ki bodo vodili do srža diplomske naloge:
 formulaciji in dokazu Mal'cevega izreka in terma, ki se imenuje po njem.
 Eden od ciljev univerzalne algebre je iskanje in uporaba skupnih lastnosti na prvi pogled popolnoma
 razližnih algebrskih struktur. To nam da nov, splošnejši in poenoten pogled na že znane strukture, hkrati pa lahko 
@@ -11,9 +46,9 @@ naredili popolnoma formalno.
 Pred definicijo in poglobitvijo v glavno temo naloge si bomo ogledali še nekaj osnovnih rezultatov o mrežah, ki bodo 
 kasneje uporabljeni v nekaterih izrekih in dokazih. 
 
-Mreže 
-
-Definicija: Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je \emph{mreža}, če 
+\section{Mreže}
+\begin{definicija}
+    Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je \emph{mreža}, če 
 za vsaka dva elementa iz $M$ veljajo naslednjim pogojem:\\
 \begin{enumerate} 
     \item[M1] $x \vee y = y \vee x$ in $x \wedge y = y \wedge x$ (komutativnost)
@@ -22,17 +57,22 @@ za vsaka dva elementa iz $M$ veljajo naslednjim pogojem:\\
     \item[M3] $x \vee x = x$ in $x \wedge x = x$ (idempotentnost)
     \item[M4] $x = x \vee \left(x \wedge y\right)$ in $x = x \wedge \left(x \vee y\right)$ (absorbcijsko pravilo).\\
 \end{enumerate}
-
+\end{definicija}
 Pokažimo sedaj, da je definicija mreže ekvivalentna naslednji trditvi.
-Trditev: Delno urejena množica $M$ je mreža natanko takrat, ko za vsaka $x,y \in M$, v $M$ obstajata $\sup{x,y}$ in 
+
+\begin{trditev}
+Delno urejena množica $M$ je mreža natanko takrat, ko za vsaka $x,y \in M$, v $M$ obstajata $\sup{x,y}$ in 
 $inf{x,y}$.
-Dokaz: Spomnimo se najprej kaj je delno urejena množica. To je množica $m$ z relacijo $\leq$, da za vse elemente 
+\end{trditev}
+
+\begin{proof}
+Spomnimo se najprej kaj je delno urejena množica. To je množica $m$ z relacijo $\leq$, da za vse elemente 
 $x,y, z \in M$ velja: \begin{enumerate}
     \item $x \leq x$ (refleksivnost)
     \item Če je $x \leq y$ in $y \leq x$, sledi $x = y$. (antisimetričnost)
     \item Če je $x \leq y$ in $y \leq z$, sledi $x \leq z$. (tranzitivnost)
 \end{enumerate}\\
-Dokazali bomo implikaciji v obe smeri. Najprej predpostavimo, da je $M$ mreža po definiciji in dokžimo trditev. 
+Dokazali bomo implikaciji v obe smeri. Najprej predpostavimo, da je $M$ mreža po definiciji in dokažimo trditev. 
 Definirajmo relacijo $\leq$: za $a, b \in M$ velja $a \leq b$ natanko takrat, ko je $a = a \wedge b$. 
 Najprej bomo preverili, da tako definirana relacija podaja delno ureditev na $M$, nato pa še obstoj $sup{a,b}$ in 
 $inf{a,b}$.
@@ -52,16 +92,89 @@ a \vee b$ torej je $a \vee b$ zgornja meja tako za $a$, kot za $b$. Pokažimo š
 \left(b \wedge u\right) = u \wedge u = u$. In zato $\left(a \vee b \right) \vee u = u$, od tu pa vstavimo $u$ v
  $ \left(a \vee b\right) \wedge u = \left(a \vee b\right) \wedge \left( \left(a \vee b\right) \vee u\right) = 
  a \vee b$ pri zadnji enakosti smo uporabili absorbcijsko pravilo. To nam da $ a \vee b \leq u$. Torej je res 
- $a \vee b = sup{a, b}$. Podobno pokažemo, da je $a \wedge b = inf{a, b}$.\\
+ $a \vee b = sup\left\{a, b\right\}$. Podobno pokažemo, da je $a \wedge b = inf\left\{a, b\right\}$.\\
  Dokažimo še obratno implikacijo torej, da iz trditve sledi definicija. Predpostavimo, da drži naša trditev in 
- definirajmo operaciji $\wedge$ in $\vee$ takole: $a \wedge b := inf{a, b}$ in $a \vee b := sup{a, b}$.
+ definirajmo operaciji $\wedge$ in $\vee$ takole: $a \wedge b := inf\left\{a, b\right\}$ in $a \vee b := sup\left\{a, b\right\}$.
  Pokažimo, da tako definirana operacija $\vee$ zadošča pogojem M1 - M4.
  \begin{enumerate}
-    \item[M1] Res velja $sup{a, b} = sup{b, a}$.
-    \item[M2] Imamo $a \vee \left(b \vee c\right)$ torej je $sup{a, sup{b, c}}$, kar je enako $sup{sup{a,b}, c}$ in zato 
+    \item[M1] Res velja $sup\left\{a, b\right\} = sup\left\{b, a\right\}$.
+    \item[M2] Imamo $a \vee \left(b \vee c\right)$ torej je $sup\left\{a, sup\left\{b, c\right\}\right\}$, kar je enako
+    $sup\left\{sup\left\{a,b\right\}, c\right\}$ in zato 
     $a \vee \left(b \vee c\right) = \left(a \vee b\right) \vee c$. 
-    \item[M3] Ker je $a = sup{a, a}$ je res $a \vee a = a$. 
-    \item[M4] $a = a \vee \left(a \wedge b\right)$ zapišemo kot $a = sup {a, inf{a, b}}$ kar je res, saj je $inf{a, b} 
-    \leq a$. 
+    \item[M3] Ker je $a = sup\left\{a, a\right\}$ je res $a \vee a = a$. 
+    \item[M4] $a = a \vee \left(a \wedge b\right)$ zapišemo kot $a = sup \left\{a, inf\left\{a, b\right\}\right\}$ 
+    kar je res, saj je $inf\left\{a, b\right\} \leq a$. 
  \end{enumerate} 
 Podobno preverimo za operacijo $\wedge$.
+\end{proof}
+
+Poglejmo si sedaj definicijo algebre. Najprej definirajmo tip ali jezik algebre. 
+
+Definicija: \emph{tip} ali \emph{jezik} algebre $A$ je množica funkcij oziroma operacij $f: A^n \rightarrow A$, 
+označimo jo z $\mathcal{F}$. Število $n \in \mathbb{N}_0$ imeneujemo \emph{rang} ali -arnost funkcije $f$.
+
+Vaska $f \in \mathcal{F}$ ima prirejeno tako nenegativno število. 
+
+Sledi definicija algebre, ki bo zaobjela večino znanih algebrskih struktur, zato se na prvi pogled zdi zapletena in 
+zelo formalna, vendar bomo kasneje skozi primere videli, da lahko algebrske strukture enostavno predstavimo kot primere
+algeber. 
+
+Definicija: \emph{Algebra $A$} tipa $\mathcal{F}$ je urejeni par $\left(A, \mathcal{F}\right)$, kjer je $A$ neprazna 
+množica, imenujemo jo tudi \emph{univerzalna množica} algebre $A$, $\mathcal{F}$ pa tip algebre. Elemente $f \in 
+\mathcal{F}$ imenujemo \emph{fundamentalne operacije} algebre $A$. 
+
+Če je množica $\mathcal{F}$ končna, torej $\mathcal{F} = \left\{f_1, f_2, \dots, f_k\right\}$ običajno algebro $A$ 
+zapišemo kot $\left(A, f_1, \dots, f_k\right)$. Fundamentalnim operacijam z rangom $1$ pravimo unitarne, za rangom $2$ 
+pa binarne operacije.
+
+Kot obljubljeno si sedaj definicijo poglejmo še na oprijemljivejši način z nekaj osnovnimi primeri, ki jih iz dosedanjega
+študija algebre že dobro poznamo.
+
+Primeri:
+\begin{enumerate}
+    \item Grupa $G$ je algebra $\left(G, \cdot, ^{-1}, 1\right)$ v kateri veljajo naslednje identitete:
+    \begin{itemize}
+        \item[G1] $x \cdot \left(y \cdot z\right) = \left(x \cdot y\right) \cdot z$
+        \item[G2] $x \cdot 1 = 1 \cdot x = x$
+        \item[G3] $x \cdot x^{-1} = x^{-1} \cdot x = 1$.
+    \end{itemize} 
+    Omenimo še, da je množenje: $\cdot$ binarna, invertiranje: $^{-1}$ unitarna operacija, enota $1$ pa operacija 
+    z rangom $0$. 
+    \item Podobno so polgrupe algebre $\left(G, \cdot\right)$ in monoidi algebre  $\left(M, \cdot, 1\right)$.
+    \item Tudi mreže, ki smo jih predstavili na začetku so algebre $\left(M,\vee, \wedge\right)$ v katerih veljajo
+    identitete M1 - M4. 
+    \item Kolobar je algebra $\left(R, +, \cdot, -, 0, 1\right)$, kjer sta $+$ in $\cdot$ binarni, $-$ unitarna in $0$ 
+    ter $1$ z rangom 0. V kolobarju pa veljajo naslednje identitete:
+    \begin{enumerate}
+        \item[R1] $\left(R, +, -, 0\right)$ je Abelova grupa,
+        \item[R2] $\left(R, \cdot\right)$ je polgrupa, 
+        \item[R3] $x \cdot \left(y + z\right) = \left(x \cdot y\right) + \left(x \cdot z\right)$ in
+        $\left(x + y\right) \cdot z = \left(x \cdot z\right) + \left(y \cdot z\right)$
+        \item[G2] $x \cdot 1 = 1 \cdot x = x$
+    \end{enumerate}
+\end{enumerate}
+Podobno lahko predstavimo še druge algebrske strukture npr. module in algebre nad kolobarjem.
+Za formulacijo Mal'cevega izreka potrebujemo pojem kongruenc, zato ga predstavimo.
+
+\begin{definicija}
+    Naj bo $A$ algebra tipa $\mathcal{F}$ in naj bo $\theta$ ekvivalenčna relacija na $A$. Tedaj je $\theta$ 
+    \emph{kongruenca} na $A$, če zadošča naslednjemu pogoju: Za vsako $n$-arno operacijo $f \in \mathcal{F}$ in 
+    vse elemente $a_i, b_i \in A$, če velja $a_i \theta b_i$ za vse $1 \leq i \leq n$, potem velja $f \left(a_1, \dots, 
+    a_n\right) \theta f\left(b_i, \dots, b_n\right)$.
+\end{definicija}
+
+Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruence v nekaterih primerih že dobro poznamo.
+
+\begin{primer}
+ Pokazali bomo, da so kongruence na grupah v bijektivni korespodenci s podgrupami edinkami. 
+ Naj bo $G$ grupa in $\theta$ kongruenca na $G$.
+\end{primer}
+
+
+
+
+
+
+
+
+\end{document}
