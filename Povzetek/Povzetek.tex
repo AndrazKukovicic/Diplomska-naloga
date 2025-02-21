@@ -1,7 +1,7 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage[slovene]{babel}
-\usepackage{amsfonts,amssymb,amsmath}
+\usepackage{amsfonts,amssymb,amsmath,amsthm}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -16,12 +16,12 @@
 \newtheorem{definicija}{Definicija}
 \newtheorem{zgled}{Zgled}
 \newtheorem{primer}{Primer}
+\bibliographystyle{plain}
 
 \title{Uvod v univerzalno algebro in Mal'cev pogoj \\ 
 \Large Povzetek diplomske naloge}
 \author{Andraž Kukovičič \\
-Fakulteta za matematiko in fiziko \\
-Oddelek za matematiko}
+Mentorica: izr. prof. dr. Ganna Kudryavtseva}
 \date{Študijsko leto 2024/25}
 
 \begin{document}
@@ -109,6 +109,7 @@ a \vee b$ torej je $a \vee b$ zgornja meja tako za $a$, kot za $b$. Pokažimo š
 Podobno preverimo za operacijo $\wedge$.
 \end{proof}
 
+\section{Algebra}
 Poglejmo si sedaj definicijo algebre. Najprej definirajmo tip ali jezik algebre. 
 
 Definicija: \emph{tip} ali \emph{jezik} algebre $A$ je množica funkcij oziroma operacij $f: A^n \rightarrow A$, 
@@ -128,10 +129,10 @@ množica, imenujemo jo tudi \emph{univerzalna množica} algebre $A$, $\mathcal{F
 zapišemo kot $\left(A, f_1, \dots, f_k\right)$. Fundamentalnim operacijam z rangom $1$ pravimo unitarne, za rangom $2$ 
 pa binarne operacije.
 
-Kot obljubljeno si sedaj definicijo poglejmo še na oprijemljivejši način z nekaj osnovnimi primeri, ki jih iz dosedanjega
+Kot obljubljeno si sedaj definicijo oglejmo še na oprijemljivejši način z nekaj osnovnimi primeri, ki jih iz dosedanjega
 študija algebre že dobro poznamo.
 
-Primeri:
+\begin{primer}:
 \begin{enumerate}
     \item Grupa $G$ je algebra $\left(G, \cdot, ^{-1}, 1\right)$ v kateri veljajo naslednje identitete:
     \begin{itemize}
@@ -154,6 +155,7 @@ Primeri:
         \item[G2] $x \cdot 1 = 1 \cdot x = x$
     \end{enumerate}
 \end{enumerate}
+\end{primer}
 Podobno lahko predstavimo še druge algebrske strukture npr. module in algebre nad kolobarjem.
 Za formulacijo Mal'cevega izreka potrebujemo pojem kongruenc, zato ga predstavimo.
 
@@ -220,11 +222,14 @@ Sedaj smo pripravljeni, da brez dokaza navedemo ciljni izrek diplomske naloge.
     in $$V \models p\left(x,y,y\right)\approx x.$$   
 \end{izrek}
 
-Ponazorimo vsebino izreka za dvema preprostima primeroma.
+Za konec ponazorimo vsebino izreka za dvema preprostima primeroma.
 
 \begin{primer}
     Grupe so kongruenčno-permutabilne, saj obstaja term $p(x,y,z)=xy^{-1}z$, ki zadošča navedenima identitetama:
     $p(x,x,y)= xx^{-1}y=y$ in $p(x, y, y)=xy^{-1}y=x$.\\
     Tudi kolobarji so kongruenčno-permutabilne algebre, za $p$ vzamemo $p(x,y,z)= x-y+z$.
 \end{primer}
+
+\section{Literatura}
+\bibliography{literatura}
 \end{document}
