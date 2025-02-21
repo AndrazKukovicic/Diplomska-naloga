@@ -167,7 +167,19 @@ Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruenc
 
 \begin{primer}
  Pokazali bomo, da so kongruence na grupah v bijektivni korespodenci s podgrupami edinkami. 
- Naj bo $G$ grupa in $\theta$ kongruenca na $G$.
+ Naj bo $G$ grupa in $\theta$ kongruenca na $G$. Označimo z $\left[1\right]_{\theta}$ ekvivalenčni razred enote v grupi 
+ $G$ glede na ekvivalenčno relacijo $\theta$. Pokažimo, da je $\left[1\right]_{\theta}$ edinka grupe $G$. Vzemimo 
+ poljubna elementa $a, b \in \left[1\right]_{\theta}$, torej zanju velja $a \theta 1$ in $b \theta 1$, produkt 
+ $a b^{-1} = 1 1^{-1} = 1 \theta 1$ torej res leži v $\left[1\right]_{\theta}$. Zato je $\left[1\right]_{\theta}$ 
+ podgrupa. Vzemimo sedaj poljuben element $g \in G$ in si oglejmo produkt $g h g^{-1}$ za neki $h \in 
+ \left[1\right]_{\theta}$. Ker je $h$ ekvivalenten $1$ je $g h g^{-1} = g 1 g^{-1} = 1 \in \left[1\right]_{\theta}$. 
+ Torej je $\left[1\right]_{\theta}$ res edinka v $G$.\\
+ Obratno vzemimo $N$ podgrupo edinko grupe $G$. In dfinirajmo relacijo $\theta$ takole: $a \theta b \Leftrightarrow 
+ a b^{-1} \in N$. Pokažimo, da je tako definirana relacija kongruenca. To je res ekvivalnečna relacija: $(r)$ $aa^{-1}=
+ 1 \in N$, $(s)$ če je $ab^{-1} \in N$ za vsaka $a, b \in N$ je tudi $ba^{-1} \in N$ in še (t) če sta $ab^{-1}$ in
+ $bc^{-1}$ iz $N$ je tudi $ab^{-1} b c^{-1}= a c^{-1} \in N$. Pokažimo še, da je $\theta$ kongruenca.
+
+
 \end{primer}
 
 
