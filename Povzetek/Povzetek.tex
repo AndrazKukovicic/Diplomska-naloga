@@ -15,6 +15,7 @@
 \newtheorem{pripomba}{Pripomba}
 \newtheorem{definicija}{Definicija}
 \newtheorem{zgled}{Zgled}
+\newtheorem{primer}{Primer}
 
 \title{Uvod v univerzalno algebro in Mal'cev pogoj \\ 
 \Large Povzetek diplomske naloge}
@@ -174,19 +175,56 @@ Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruenc
  podgrupa. Vzemimo sedaj poljuben element $g \in G$ in si oglejmo produkt $g h g^{-1}$ za neki $h \in 
  \left[1\right]_{\theta}$. Ker je $h$ ekvivalenten $1$ je $g h g^{-1} = g 1 g^{-1} = 1 \in \left[1\right]_{\theta}$. 
  Torej je $\left[1\right]_{\theta}$ res edinka v $G$.\\
- Obratno vzemimo $N$ podgrupo edinko grupe $G$. In dfinirajmo relacijo $\theta$ takole: $a \theta b \Leftrightarrow 
- a b^{-1} \in N$. Pokažimo, da je tako definirana relacija kongruenca. To je res ekvivalnečna relacija: $(r)$ $aa^{-1}=
- 1 \in N$, $(s)$ če je $ab^{-1} \in N$ za vsaka $a, b \in N$ je tudi $ba^{-1} \in N$ in še (t) če sta $ab^{-1}$ in
- $bc^{-1}$ iz $N$ je tudi $ab^{-1} b c^{-1}= a c^{-1} \in N$. Pokažimo še, da je $\theta$ kongruenca.
-
+ Obratno vzemimo $H$ podgrupo edinko grupe $G$. In definirajmo relacijo $\theta$ takole: $a \theta b \Leftrightarrow 
+ a b^{-1} \in H$. Pokažimo, da je tako definirana relacija kongruenca.\\ 
+ $\theta$ je res ekvivalnečna relacija: $(r)$ $aa^{-1}=
+ 1 \in H$, $(s)$ če je $ab^{-1} \in H$ za vsaka $a, b \in H$ je tudi $ba^{-1} \in H$ in še $(t)$ če sta $ab^{-1}$ in
+ $bc^{-1}$ iz $H$ je tudi $ab^{-1} b c^{-1}= a c^{-1} \in H$. Pokažimo še, da je $\theta$ kongruenca. Vzemimo $a, a', 
+ b, b'\in H$ take, da velja $a \theta a'$ in $b \theta b'$. Pokazati moramo, da velja $ab \theta a'b'$. Ker je $H$ 
+ pogrupa obstajata taka $h_1, h_2 \in H$, da je $a' = ah_1$ in $b' = b h_2$, ker je $H$ edinka obstaja tak $h_3 \in H$, 
+ da je $h_1b = bh_3$. Oglejmo si sedaj produkt $a'b' = ah_1bh_2 = abh_3h_2$, torej je $a'b' \theta ab$. 
+ Torej je preslikava, ki kongruenci priredi podgrupo edinko $\theta \mapsto \left[1\right]_{\theta}$ bijekcija.
 
 \end{primer}
 
+Za formulacijo Mal'cevega izreka moramo definirati še nekaj pojmov. 
+\begin{definicija}
+    \emph{Identiteta} tipa $\mathcal{F}$ nad $X$ je izraz oblike $p \approx q$, kjer sta $p, q \in T\left(X\right)$.
+\end{definicija}
+Pri tem je $T\left(X\right)$ množica vseh termov tipa $\mathcal{F}$ nad $X$, kjer je $X$ množica spremenljivk. Termi 
+tipa $\mathcal{F}$ so izrazi, ki jih lahko sestavimo iz spremenljivk in operacij iz $\mathcal{F}$. Naprimer če za našo 
+algebro vzamemo grupe so nekateri termi: $xy$, $x1$, $xyx^{-1}$, $x1xyxyy$. Na splošno če ima algebra tip $\mathcal{F} =
+\left\{\cdot, +\right\}$, kjer sta $\cdot$ in $+$ binarni operaciji, so termi naprimer: $x+y, (x+y) \cdot z, xyz, \ldots$
 
+Pravimo da algebra $A$ tipa $\mathcal{F}$ zadošča $p\left(x_1, \ldots, x_n\right)\approx q\left(x_1, \ldots, x_n\right)$,
+če za vsako izbiro $a_1, \ldots, a_n \in A$ velja: $p\left(a_1, \ldots, a_n\right) \approx q\left(a_1, 
+\ldots, a_n\right)$. To relacijo označimo takole: $A \models p \approx q$. Dodatno, pravimo da razred algeber $K$ 
+zadošča $p \approx q$, če vsaka algebra iz $K$ zadošča $p \approx q$, kar označimo: $K \models p \approx q$.
 
+Nadaljujmo z definicijama, ki bosta imeli pomembni vlogi pri našem izreku.
 
+\begin{definicija}
+    Algebra $A$ je \emph{kongruenčno-permutabilna}, če vsak par kongruenc komutira: $\theta_1 \circ \theta_2 =
+    \theta_2 \circ \theta_1$. 
+\end{definicija}
 
+\begin{definicija}
+    Neprazen razred $K$ algeber tipa $\mathcal{F}$ imenujemo \emph{raznoterost}, če je zaprt za podalgebre, 
+    slike homomorfizmov in direktne produkte.
+\end{definicija}
 
+Sedaj smo pripravljeni, da brez dokaza navedemo ciljni izrek diplomske naloge.
 
+\begin{izrek}[Mal'cev] Naj bo $V$ raznoterost tipa $\mathcal{F}$. Raznoterost $V$ je kongruenčno-permutabilna
+    natanko takrat, ko obstaja term $p\left(x, y, z\right)$, da: \\ $$V \models p\left(x,x,y\right)\approx y$$ 
+    in $$V \models p\left(x,y,y\right)\approx x.$$   
+\end{izrek}
 
+Ponazorimo vsebino izreka za dvema preprostima primeroma.
+
+\begin{primer}
+    Grupe so kongruenčno-permutabilne, saj obstaja term $p(x,y,z)=xy^{-1}z$, ki zadošča navedenima identitetama:
+    $p(x,x,y)= xx^{-1}y=y$ in $p(x, y, y)=xy^{-1}y=x$.\\
+    Tudi kolobarji so kongruenčno-permutabilne algebre, za $p$ vzamemo $p(x,y,z)= x-y+z$.
+\end{primer}
 \end{document}
