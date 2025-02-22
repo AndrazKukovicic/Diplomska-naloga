@@ -7,7 +7,9 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{biblatex}
+\usepackage{hyperref}
 \addbibresource{literatura.bib}
+
 \def\qed{$\hfill\Box$}   % konec dokaza
 \def\qedm{\qquad\Box}   % konec dokaza v matematičnem načinu
 \newtheorem{izrek}{Izrek}
@@ -225,7 +227,7 @@ Sedaj smo pripravljeni, da brez dokaza navedemo ciljni izrek diplomske naloge.
     in $$V \models p\left(x,y,y\right)\approx x.$$   
 \end{izrek}
 
-Za konec ponazorimo vsebino izreka z dvema preprostima primeroma.
+Za konec ponazorimo vsebino izreka z dvema preprostima primeroma. \nocite{Burris_Sankappanavar_1981}
 
 \begin{primer}
     Grupe so kongruenčno-permutabilne, saj obstaja term $p(x,y,z)=xy^{-1}z$, ki zadošča navedenima identitetama:
@@ -233,7 +235,7 @@ Za konec ponazorimo vsebino izreka z dvema preprostima primeroma.
     Tudi kolobarji so kongruenčno-permutabilne algebre, za $p$ vzamemo $p(x,y,z)= x-y+z$.
 \end{primer}
 
-%\section{Literatura}
+\printbibliography
 
-%\printbibliography
+
 \end{document}
