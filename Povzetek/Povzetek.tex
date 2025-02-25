@@ -56,11 +56,11 @@ kasneje uporabljeni v nekaterih izrekih in dokazih.
     Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je \emph{mreža}, če 
 za vsaka dva elementa iz $M$ veljajo naslednji pogoji:\\
 \begin{enumerate} 
-    \item[$$M1$$] $x \vee y = y \vee x$ in $x \wedge y = y \wedge x$ (komutativnost)
-    \item[$$M2$$] $x\vee \left(y \vee z\right) = \left(x \vee y\right)\vee z$ in 
+    \item[$M1$] $x \vee y = y \vee x$ in $x \wedge y = y \wedge x$ (komutativnost)
+    \item[$M2$] $x\vee \left(y \vee z\right) = \left(x \vee y\right)\vee z$ in 
     $x \wedge \left(y \wedge z\right) = \left(x \wedge y\right)\wedge z$ (asociativnost)
-    \item[$$M3$$] $x \vee x = x$ in $x \wedge x = x$ (idempotentnost)
-    \item[$$M4$$] $x = x \vee \left(x \wedge y\right)$ in $x = x \wedge \left(x \vee y\right)$ (absorbcijsko pravilo).\\
+    \item[$M3$] $x \vee x = x$ in $x \wedge x = x$ (idempotentnost)
+    \item[$M4$] $x = x \vee \left(x \wedge y\right)$ in $x = x \wedge \left(x \vee y\right)$ (absorbcijsko pravilo).\\
 \end{enumerate}
 \end{definicija}
 Pokažimo sedaj, da je definicija mreže ekvivalentna naslednji trditvi.
@@ -73,7 +73,7 @@ $\mathrm{inf}\left\{x,y\right\}$.
 \begin{proof}
 Spomnimo se najprej kaj je delno urejena množica. To je množica $m$ z relacijo $\leq$, da za vse elemente 
 $x,y, z \in M$ velja: \begin{enumerate}
-    \item $x \leq x$ (refleksivnost)
+    \item $x \leq x$. (refleksivnost)
     \item Če je $x \leq y$ in $y \leq x$, sledi $x = y$. (antisimetričnost)
     \item Če je $x \leq y$ in $y \leq z$, sledi $x \leq z$. (tranzitivnost)
 \end{enumerate}\\
@@ -149,7 +149,7 @@ Kot obljubljeno si sedaj definicijo oglejmo še na oprijemljivejši način z nek
     z rangom $0$. 
     \item Podobno so polgrupe algebre $\left(G, \cdot\right)$ in monoidi algebre  $\left(M, \cdot, 1\right)$.
     \item Tudi mreže, ki smo jih predstavili na začetku so algebre $\left(M,\vee, \wedge\right)$ v katerih veljajo
-    identitete M1 - M4. 
+    identitete $M1$ - $M4$. 
     \item Kolobar je algebra $\left(R, +, \cdot, -, 0, 1\right)$, kjer sta $+$ in $\cdot$ binarni, $-$ unitarna in $0$ 
     ter $1$ z rangom 0. V kolobarju pa veljajo naslednji pogoji:
     \begin{enumerate}
@@ -161,7 +161,7 @@ Kot obljubljeno si sedaj definicijo oglejmo še na oprijemljivejši način z nek
     \end{enumerate}
 \end{enumerate}
 \end{primer}
-Podobno lahko predstavimo še druge algebrske strukture npr. module in algebre nad kolobarjem.
+Podobno lahko predstavimo še druge algebrske strukture npr.\ module in algebre nad kolobarjem.
 Za formulacijo Mal'cevega izreka potrebujemo pojem kongruence, zato ga predstavimo.
 
 \begin{definicija}
@@ -171,7 +171,7 @@ Za formulacijo Mal'cevega izreka potrebujemo pojem kongruence, zato ga predstavi
     \dots, a_n\right) \mathrel{\theta} f\left(b_i, \dots, b_n\right)$.
 \end{definicija}
 
-Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruence v nekaterih primerih že dobro poznamo.
+Ponovno si na primeru oglejmo, kaj nam definicija pove. Videli bomo, da kongruence v nekaterih primerih že dobro poznamo.
 
 \begin{primer}
  Pokazali bomo, da so kongruence na grupah v bijektivni korespodenci s podgrupami edinkami. 
@@ -202,7 +202,7 @@ Za formulacijo Mal'cevega izreka moramo definirati še nekaj pojmov.
 Pri tem je $T\left(X\right)$ množica vseh termov tipa $\mathcal{F}$ nad $X$, kjer je $X$ množica spremenljivk. Termi 
 tipa $\mathcal{F}$ so izrazi, ki jih lahko sestavimo iz spremenljivk in operacij iz $\mathcal{F}$. Na primer če za našo 
 algebro vzamemo grupe so nekateri termi: $xy$, $x1$, $xyx^{-1}$, $x1xyxyy$. Podobno, če ima algebra tip $\mathcal{F} =
-\left\{\cdot, +\right\}$, kjer sta $\cdot$ in $+$ binarni operaciji, so termi naprimer: $x+y, (x+y) \cdot z, xyz, \ldots$
+\left\{\cdot, +\right\}$, kjer sta $\cdot$ in $+$ binarni operaciji, so termi na primer: $x+y, (x+y) \cdot z, xyz, \ldots$
 
 Pravimo da algebra $A$ tipa $\mathcal{F}$ zadošča $p\left(x_1, \ldots, x_n\right)\approx q\left(x_1, \ldots, x_n\right)$,
 če za vsako izbiro $a_1, \ldots, a_n \in A$ velja: $p\left(a_1, \ldots, a_n\right) \approx q\left(a_1, 
@@ -211,7 +211,7 @@ zadošča $p \approx q$, če vsaka algebra iz $K$ zadošča $p \approx q$, kar o
 
 
 
-Vemo, da je kongruenca relacija, zato jo lahko predstavimo kot množico urejenih parov, elementov iz algebre. 
+Vemo, da je kongruenca relacija, zato jo lahko predstavimo kot množico urejenih parov elementov iz algebre $A$. 
 Na tak način definiramo tudi \emph{produkt kongruenc}:
     $$\theta_1 \circ \theta_2 := \left\{\left(a, b\right) \in A \times A \mathrel{|} \exists c \in A. a \mathrel{\theta_1} 
     c \text{ in } c \mathrel{\theta_2} b\right\}.$$
