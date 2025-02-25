@@ -167,8 +167,8 @@ Za formulacijo Mal'cevega izreka potrebujemo pojem kongruence, zato ga predstavi
 \begin{definicija}
     Naj bo $A$ algebra tipa $\mathcal{F}$ in naj bo $\theta$ ekvivalenčna relacija na $A$. Tedaj je $\theta$ 
     \emph{kongruenca} na $A$, če zadošča naslednjemu pogoju: Za vsako $n$-arno operacijo $f \in \mathcal{F}$ in 
-    vse elemente $a_i, b_i \in A$, če velja $a_i \theta b_i$ za vse $1 \leq i \leq n$, potem velja $f \left(a_1, \dots, 
-    a_n\right) \theta f\left(b_i, \dots, b_n\right)$.
+    vse elemente $a_i, b_i \in A$, če velja $a_i \mathrel{\theta} b_i$ za vse $1 \leq i \leq n$, potem velja $f \left(a_1, 
+    \dots, a_n\right) \mathrel{\theta} f\left(b_i, \dots, b_n\right)$.
 \end{definicija}
 
 Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruence v nekaterih primerih že dobro poznamo.
@@ -177,20 +177,21 @@ Ponovno si na primeru oglejmo kaj naj definicija pove, videli bomo, da kongruenc
  Pokazali bomo, da so kongruence na grupah v bijektivni korespodenci s podgrupami edinkami. 
  Naj bo $G$ grupa in $\theta$ kongruenca na $G$. Označimo z $\left[1\right]_{\theta}$ ekvivalenčni razred enote v grupi 
  $G$ glede na ekvivalenčno relacijo $\theta$. Pokažimo, da je $\left[1\right]_{\theta}$ edinka grupe $G$. Vzemimo 
- poljubna elementa $a, b \in \left[1\right]_{\theta}$, torej zanju velja $a \theta 1$ in $b \theta 1$, produkt 
- $a b^{-1} = 1 1^{-1} = 1 \theta 1$ torej res leži v $\left[1\right]_{\theta}$. Zato je $\left[1\right]_{\theta}$ 
- podgrupa. Vzemimo sedaj poljuben element $g \in G$ in si oglejmo produkt $g h g^{-1}$ za neki $h \in 
- \left[1\right]_{\theta}$. Ker je $h$ ekvivalenten $1$ je $g h g^{-1} = g 1 g^{-1} = 1 \in \left[1\right]_{\theta}$. 
- Torej je $\left[1\right]_{\theta}$ res edinka v $G$.\\
- Obratno vzemimo $H$ podgrupo edinko grupe $G$. In definirajmo relacijo $\theta$ takole: $a \theta b \Leftrightarrow 
- a b^{-1} \in H$. Pokažimo, da je tako definirana relacija kongruenca.\\ 
+ poljubna elementa $a, b \in \left[1\right]_{\theta}$, torej zanju velja $a \mathrel{\theta} 1$ in $b \mathrel{\theta} 1$, 
+ produkt  $a b^{-1} = 1 1^{-1} = 1 \mathrel{\theta} 1$ torej res leži v $\left[1\right]_{\theta}$. Zato je 
+ $\left[1\right]_{\theta}$ podgrupa. Vzemimo sedaj poljuben element $g \in G$ in si oglejmo produkt $g h g^{-1}$ za neki 
+ $h \in  \left[1\right]_{\theta}$. Ker je $h$ ekvivalenten $1$ je $g h g^{-1} \mathrel{\theta} g 1 g^{-1} = 1 \in 
+ \left[1\right]_{\theta}$. Torej je $\left[1\right]_{\theta}$ res edinka v $G$.\\
+ Obratno vzemimo $H$ podgrupo edinko grupe $G$. In definirajmo relacijo $\theta$ takole: $a \mathrel{\theta} b 
+ \Leftrightarrow a b^{-1} \in H$. Pokažimo, da je tako definirana relacija kongruenca.\\ 
  $\theta$ je res ekvivalnečna relacija: $(r)$ $aa^{-1}=
  1 \in H$, $(s)$ če je $ab^{-1} \in H$ za vsaka $a, b \in H$ je tudi $ba^{-1} \in H$ in še $(t)$ če sta $ab^{-1}$ in
  $bc^{-1}$ iz $H$ je tudi $ab^{-1} b c^{-1}= a c^{-1} \in H$. Pokažimo še, da je $\theta$ kongruenca. Vzemimo $a, a', 
- b, b'\in H$ take, da velja $a \theta a'$ in $b \theta b'$. Pokazati moramo, da velja $ab \theta a'b'$. Ker je $H$ 
- pogrupa obstajata taka $h_1, h_2 \in H$, da je $a' = ah_1$ in $b' = b h_2$, ker je $H$ edinka obstaja tak $h_3 \in H$, 
- da je $h_1b = bh_3$. Oglejmo si sedaj produkt $a'b' = ah_1bh_2 = abh_3h_2$, torej je $a'b' \theta ab$. 
- Torej je preslikava, ki kongruenci priredi podgrupo edinko: $\theta \mapsto \left[1\right]_{\theta}$ bijekcija.
+ b, b'\in H$ take, da velja $a \mathrel{\theta} a'$ in $b \mathrel{\theta} b'$. Pokazati moramo, da velja $ab 
+ \mathrel{\theta} a'b'$. Ker je $H$ pogrupa obstajata taka $h_1, h_2 \in H$, da je $a' = ah_1$ in $b' = b h_2$, 
+ ker je $H$ edinka obstaja tak $h_3 \in H$, da je $h_1b = bh_3$. Oglejmo si sedaj produkt $a'b' = ah_1bh_2 = abh_3h_2$, 
+ torej je $a'b' \mathrel{\theta} ab$. Torej je preslikava, ki kongruenci priredi podgrupo edinko: $\theta \mapsto 
+ \left[1\right]_{\theta}$ bijekcija.
 
 \end{primer}
 
@@ -208,7 +209,13 @@ Pravimo da algebra $A$ tipa $\mathcal{F}$ zadošča $p\left(x_1, \ldots, x_n\rig
 \ldots, a_n\right)$. To relacijo označimo takole: $A \models p \approx q$. Dodatno, pravimo da razred algeber $K$ 
 zadošča $p \approx q$, če vsaka algebra iz $K$ zadošča $p \approx q$, kar označimo: $K \models p \approx q$.
 
-Nadaljujmo z definicijama, ki bosta imeli pomembni vlogi pri našem izreku.
+
+
+Vemo, da je kongruenca relacija, zato jo lahko predstavimo kot množico urejenih parov, elementov iz algebre. 
+Na tak način definiramo tudi \emph{produkt kongruenc}:
+    $$\theta_1 \circ \theta_2 := \left\{\left(a, b\right) \in A \times A \mathrel{|} \exists c \in A. a \mathrel{\theta_1} 
+    c \text{ in } c \mathrel{\theta_2} b\right\}.$$
+    Nadaljujmo z definicijama, ki bosta imeli pomembni vlogi pri našem izreku.
 
 \begin{definicija}
     Algebra $A$ je \emph{kongruenčno-permutabilna}, če vsak par kongruenc komutira: $\theta_1 \circ \theta_2 =
