@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Povzetek"] 0 "Povzetek.bcf" "Povzetek.bbl" "Povzetek" 1740648710.01303 -1
-  "Povzetek.bcf" 1740648709 107792 cb7340351f6bc2b1eb86977cde6b2996 "pdflatex"
-  "literatura.bib" 1740243413 300 3e3f895331aca94bb3c091e056a3b19b ""
+["biber Povzetek_Andraž_kukovičič_Ježi"] 1740648907.27137 "Povzetek_Andraž_kukovičič_Ježi.bcf" "Povzetek_Andraž_kukovičič_Ježi.bbl" "Povzetek_Andraž_kukovičič_Ježi" 1740648910.19345 2
+  "Povzetek_Andra?_kukovi?i?_Je?i.bcf" 0 -1 0 ""
+  "Povzetek_Andraž_kukovičič_Ježi.bcf" 0 -1 0 "pdflatex"
   (generated)
-  "Povzetek.bbl"
-  "Povzetek.blg"
+  "Povzetek_Andraž_kukovičič_Ježi.bbl"
+  "Povzetek_Andraž_kukovičič_Ježi.blg"
   (rewritten before read)
-["pdflatex"] 1740648708.66976 "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek.tex" "Povzetek.pdf" "Povzetek" 1740648710.01405 2
+["pdflatex"] 1740648905.11204 "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek_Andraž_kukovičič_Ježi.tex" "Povzetek_Andraž_kukovičič_Ježi.pdf" "Povzetek_Andraž_kukovičič_Ježi" 1740648906.63112 2
   "C:/Users/andra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1740244010 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/andra/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733088687 24225046 b508d66fae4335c6043ec576fd71ffab ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -22,7 +22,6 @@
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx10.tfm" 1256929440 12076 b54175e02101bea1addf6b2d0197ed12 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx12.tfm" 1256929440 12088 d750ac78274fa7c9f73ba09914c04f8a ""
-  "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmcsc10.tfm" 1256929440 11276 116dd5bea6621ce4a1999f96d876084c ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr17.tfm" 1256929440 12156 ca1ae6a3c8564e89597f1f993fba1608 ""
@@ -45,7 +44,6 @@
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb" 1256929440 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
-  "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb" 1256929440 116427 4909e80035dae5d5a4ec2b5ddd9649dd ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb" 1256929440 23055 2e5b42921de910eaa97b85df04ca4891 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb" 1256929440 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb" 1256929440 30635 833ec815d446ec453a4913fc26d24cbc ""
@@ -136,16 +134,16 @@
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Povzetek.aux" 1740648709 851 a7b7272b38a75337ad40f71575bdb6d7 "pdflatex"
-  "Povzetek.bbl" 1740245944 1935 4cc50cd4a3c4dd8f87fc3c4ea1350ca0 "biber Povzetek"
-  "Povzetek.out" 1740648709 212 1234046fd32690129b9fd2271dd3d22c "pdflatex"
-  "Povzetek.tex" 1740648705 15158 5e850d5cd0086aa5618230960176467f ""
-  "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek.tex" 1740648705 15158 5e850d5cd0086aa5618230960176467f ""
+  "Povzetek_Andraž_kukovičič_Ježi.aux" 0 -1 0 "pdflatex"
+  "Povzetek_Andraž_kukovičič_Ježi.bbl" 1740648909 0 d41d8cd98f00b204e9800998ecf8427e "biber Povzetek_Andraž_kukovičič_Ježi"
+  "Povzetek_Andraž_kukovičič_Ježi.out" 0 -1 0 "pdflatex"
+  "Povzetek_Andraž_kukovičič_Ježi.tex" 1740648705 15158 5e850d5cd0086aa5618230960176467f ""
+  "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek_Andraž_kukovičič_Ježi.tex" 1740648705 15158 5e850d5cd0086aa5618230960176467f ""
   (generated)
-  "Povzetek.aux"
-  "Povzetek.bcf"
-  "Povzetek.log"
-  "Povzetek.out"
-  "Povzetek.pdf"
-  "Povzetek.run.xml"
+  "Povzetek_Andraž_kukovičič_Ježi.aux"
+  "Povzetek_Andraž_kukovičič_Ježi.bcf"
+  "Povzetek_Andraž_kukovičič_Ježi.log"
+  "Povzetek_Andraž_kukovičič_Ježi.out"
+  "Povzetek_Andraž_kukovičič_Ježi.pdf"
+  "Povzetek_Andraž_kukovičič_Ježi.run.xml"
   (rewritten before read)

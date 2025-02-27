@@ -23,7 +23,7 @@
 
 
 \title{Uvod v univerzalno algebro in Mal'cev pogoj \\ 
-\Large Povzetek diplomske naloge}
+\Large Osnutek diplomske naloge}
 \author{Andraž Kukovičič \\
 Mentorica: izr. prof. dr. Ganna Kudryavtseva}
 \date{Študijsko leto 2024/25}
@@ -37,7 +37,7 @@ Mentorica: izr. prof. dr. Ganna Kudryavtseva}
 \maketitle
 
 \section{Uvod}
-V diplomski nalogi in njenem povzetku bom predstavil osnovne pojme univerzalne algebre skupaj s primeri, 
+V diplomski nalogi in njenem osnutku bom predstavil osnovne pojme univerzalne algebre skupaj s primeri, 
 ki smo jih v dosedanjem študiju matematike že srečali. 
 Postopno bom predstavil pojme in rezultate, ki bodo vodili do srža diplomske naloge:
 formulacije in dokaza Mal'cevega izreka in terma, ki se imenuje po njem.
@@ -54,7 +54,7 @@ kasneje uporabljeni v nekaterih izrekih in dokazih.
 \section{Mreže}
 \begin{definicija}
     Neprazna množica $M$ z dvema binarnima operacijama, ki ju označimo z $\vee$ in $\wedge$ je \emph{mreža}, če 
-za vsaka dva elementa iz $M$ veljajo naslednji pogoji:\\
+za vse elemente $x, y, z$ iz $M$ veljajo naslednji pogoji:\\
 \begin{enumerate} 
     \item[$M1$] $x \vee y = y \vee x$ in $x \wedge y = y \wedge x$ (komutativnost)
     \item[$M2$] $x\vee \left(y \vee z\right) = \left(x \vee y\right)\vee z$ in 
@@ -213,8 +213,8 @@ zadošča $p \approx q$, če vsaka algebra iz $K$ zadošča $p \approx q$, kar o
 
 Vemo, da je kongruenca relacija, zato jo lahko predstavimo kot množico urejenih parov elementov iz algebre $A$. 
 Na tak način definiramo tudi \emph{produkt kongruenc}:
-    $$\theta_1 \circ \theta_2 := \left\{\left(a, b\right) \in A \times A \mathrel{|} \exists c \in A. a \mathrel{\theta_1} 
-    c \text{ in } c \mathrel{\theta_2} b\right\}.$$
+    $$\theta_1 \circ \theta_2 := \left\{\left(a, b\right) \in A \times A \mathrel{|} \exists c \in A, \text{tako da } 
+    a \mathrel{\theta_1} c \text{ in } c \mathrel{\theta_2} b\right\}.$$
     Nadaljujmo z definicijama, ki bosta imeli pomembni vlogi pri našem izreku.
 
 \begin{definicija}

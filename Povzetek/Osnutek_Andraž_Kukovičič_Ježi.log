@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.1)  27 FEB 2025 10:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.12.1)  27 FEB 2025 10:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek.tex"
-(c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek.tex
+**"c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_Ježi.tex"
+(c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_Ježi.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\andra\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -543,8 +543,8 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 31.
 (C:\Users\andra\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-No file Povzetek.aux.
-\openout1 = `Povzetek.aux'.
+No file Osnutek_Andraž_Kukovičič_Ježi.aux.
+\openout1 = `Osnutek_Andraž_Kukovičič_Ježi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
@@ -591,16 +591,16 @@ File: slovene.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `Povzetek.bcf'.
+\openout3 = `Osnutek_Andraž_Kukovičič_Ježi.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Povzetek.bbl' found.
- (Povzetek.bbl)
+Package biblatex Info: ... file 'Osnutek_Andraž_Kukovičič_Ježi.bbl' found.
+ (Osnutek_Andraž_Kukovičič_Ježi.bbl)
 Package biblatex Info: Reference section=0 on input line 31.
 Package biblatex Info: Reference segment=0 on input line 31.
 Package hyperref Info: Link coloring OFF on input line 31.
 \@outlinefile=\write4
-\openout4 = `Povzetek.out'.
+\openout4 = `Osnutek_Andraž_Kukovičič_Ježi.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 38.
  (C:\Users\andra\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
@@ -648,7 +648,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
 {C:/Users/andra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
 
-c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Povzetek.tex:80: LaTeX Error: There's no line here to end.
+c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_Ježi.tex:80: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -676,6 +676,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
  []
 
 
+LaTeX Warning: Citation 'Burris_Sankappanavar_1981' undefined on input line 237.
+
+
 Overfull \hbox (2.07364pt too wide) in paragraph at lines 240--243
 []\T1/lmr/bx/n/10.95 Primer 3. \T1/lmr/m/it/10.95 Grupe so kongruen�no-permutabilne, saj ob-staja term $\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x; y; z\OT1/lmr/m/n/10.95 ) =
  []
@@ -685,7 +688,10 @@ Overfull \hbox (8.41785pt too wide) in paragraph at lines 240--243
 \T1/lmr/m/it/10.95 Tudi ko-lo-barji so kongruen�no-permutabilne al-ge-bre, za $\OML/lmm/m/it/10.95 p$ \T1/lmr/m/it/10.95 vza-memo $\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 x; y; z\OT1/lmr/m/n/10.95 ) =
  []
 
-[5] (Povzetek.aux)
+
+LaTeX Warning: Empty bibliography on input line 245.
+
+[5] (Osnutek_Andraž_Kukovičič_Ježi.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -695,34 +701,34 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `Povzetek.out' has changed.
+Package rerunfilecheck Warning: File `Osnutek_Andraž_Kukovičič_Ježi.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `Povzetek.out':
+Package rerunfilecheck Info: Checksums for `Osnutek_Andraž_Kukovičič_Ježi.out':
 (rerunfilecheck)             Before: <no file>
 (rerunfilecheck)             After:  1234046FD32690129B9FD2271DD3D22C;212.
 
 Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Povzetek
+(biblatex)                Osnutek_Andraž_Kukovičič_Ježi
 (biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'Povzetek.run.xml'.
-\openout1 = `Povzetek.run.xml'.
+Package logreq Info: Writing requests to 'Osnutek_Andraž_Kukovičič_Ježi.run.xml'.
+\openout1 = `Osnutek_Andraž_Kukovičič_Ježi.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18297 strings out of 474486
- 319622 string characters out of 5743755
+ 18082 strings out of 474486
+ 315677 string characters out of 5743755
  1941542 words of memory out of 5000000
- 40335 multiletter control sequences out of 15000+600000
- 606445 words of font info for 69 fonts, out of 8000000 for 9000
+ 40123 multiletter control sequences out of 15000+600000
+ 603650 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,6n,81p,746b,1441s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Povzetek.pdf (5 pages, 281248 bytes).
+ 66i,6n,81p,771b,1440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Osnutek_Andraž_Kukovičič_Ježi.pdf (5 pages, 256675 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
