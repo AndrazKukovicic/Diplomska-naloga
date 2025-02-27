@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Osnutek_Andraž_Kukovičič_Ježi"] 1740648989.49059 "Osnutek_Andraž_Kukovičič_Ježi.bcf" "Osnutek_Andraž_Kukovičič_Ježi.bbl" "Osnutek_Andraž_Kukovičič_Ježi" 1740649095.40582 2
-  "Osnutek_Andra?_Kukovi?i?_Je?i.bcf" 0 -1 0 ""
-  "Osnutek_Andraž_Kukovičič_Ježi.bcf" 1740649095 107792 cb7340351f6bc2b1eb86977cde6b2996 "pdflatex"
+["biber Osnutek_Andraž_Kukovičič_jež"] 0 "Osnutek_Andraž_Kukovičič_jež.bcf" "Osnutek_Andraž_Kukovičič_jež.bbl" "Osnutek_Andraž_Kukovičič_jež" 1740649109.87529 -1
+  "Osnutek_Andraž_Kukovičič_jež.bcf" 1740649109 107792 cb7340351f6bc2b1eb86977cde6b2996 "pdflatex"
+  "literatura.bib" 1740243413 300 3e3f895331aca94bb3c091e056a3b19b ""
   (generated)
-  "Osnutek_Andraž_Kukovičič_Ježi.bbl"
-  "Osnutek_Andraž_Kukovičič_Ježi.blg"
+  "Osnutek_Andraž_Kukovičič_jež.bbl"
+  "Osnutek_Andraž_Kukovičič_jež.blg"
   (rewritten before read)
-["pdflatex"] 1740649094.0087 "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_Ježi.tex" "Osnutek_Andraž_Kukovičič_Ježi.pdf" "Osnutek_Andraž_Kukovičič_Ježi" 1740649095.40677 2
+["pdflatex"] 1740649108.47984 "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_jež.tex" "Osnutek_Andraž_Kukovičič_jež.pdf" "Osnutek_Andraž_Kukovičič_jež" 1740649109.87633 2
   "C:/Users/andra/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1740244010 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/andra/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1733088687 24225046 b508d66fae4335c6043ec576fd71ffab ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -134,16 +134,16 @@
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/andra/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Osnutek_Andraž_Kukovičič_Ježi.aux" 1740649095 767 645d852c7b628591b9d99d2a323a8697 "pdflatex"
-  "Osnutek_Andraž_Kukovičič_Ježi.bbl" 1740648991 0 d41d8cd98f00b204e9800998ecf8427e "biber Osnutek_Andraž_Kukovičič_Ježi"
-  "Osnutek_Andraž_Kukovičič_Ježi.out" 1740649095 212 1234046fd32690129b9fd2271dd3d22c "pdflatex"
-  "Osnutek_Andraž_Kukovičič_Ježi.tex" 1740648988 15156 67b5b314a771b290c8e4b518f6c247b1 ""
-  "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_Ježi.tex" 1740648988 15156 67b5b314a771b290c8e4b518f6c247b1 ""
+  "Osnutek_Andraž_Kukovičič_jež.aux" 1740649109 767 645d852c7b628591b9d99d2a323a8697 "pdflatex"
+  "Osnutek_Andraž_Kukovičič_jež.bbl" 0 -1 0 "biber Osnutek_Andraž_Kukovičič_jež"
+  "Osnutek_Andraž_Kukovičič_jež.out" 1740649109 212 1234046fd32690129b9fd2271dd3d22c "pdflatex"
+  "Osnutek_Andraž_Kukovičič_jež.tex" 1740648988 15156 67b5b314a771b290c8e4b518f6c247b1 ""
+  "c:/Users/andra/Documents/Diploma fmf/Diplomska-naloga/Povzetek/Osnutek_Andraž_Kukovičič_jež.tex" 1740648988 15156 67b5b314a771b290c8e4b518f6c247b1 ""
   (generated)
-  "Osnutek_Andraž_Kukovičič_Ježi.aux"
-  "Osnutek_Andraž_Kukovičič_Ježi.bcf"
-  "Osnutek_Andraž_Kukovičič_Ježi.log"
-  "Osnutek_Andraž_Kukovičič_Ježi.out"
-  "Osnutek_Andraž_Kukovičič_Ježi.pdf"
-  "Osnutek_Andraž_Kukovičič_Ježi.run.xml"
+  "Osnutek_Andraž_Kukovičič_jež.aux"
+  "Osnutek_Andraž_Kukovičič_jež.bcf"
+  "Osnutek_Andraž_Kukovičič_jež.log"
+  "Osnutek_Andraž_Kukovičič_jež.out"
+  "Osnutek_Andraž_Kukovičič_jež.pdf"
+  "Osnutek_Andraž_Kukovičič_jež.run.xml"
   (rewritten before read)

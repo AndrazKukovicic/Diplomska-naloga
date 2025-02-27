@@ -1,7 +1,7 @@
 PWD c:\Users\andra\Documents\Diploma fmf\Diplomska-naloga\Povzetek
 INPUT C:\Users\andra\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\andra\Documents\Diploma fmf\Diplomska-naloga\Povzetek\Osnutek_Andraž_Kukovičič_Ježi.tex
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.log
+INPUT c:\Users\andra\Documents\Diploma fmf\Diplomska-naloga\Povzetek\Osnutek_Andraž_Kukovičič_jež.tex
+OUTPUT Osnutek_Andraž_Kukovičič_jež.log
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -159,10 +159,10 @@ INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.aux
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.aux
-INPUT Osnutek_Andraž_Kukovičič_Ježi.aux
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.aux
+INPUT .\Osnutek_Andraž_Kukovičič_jež.aux
+INPUT .\Osnutek_Andraž_Kukovičič_jež.aux
+INPUT Osnutek_Andraž_Kukovičič_jež.aux
+OUTPUT Osnutek_Andraž_Kukovičič_jež.aux
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -174,14 +174,9 @@ INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\slovene.lbx
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\slovene.lbx
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\slovene.lbx
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.bcf
-INPUT Osnutek_Andraž_Kukovičič_Ježi.bbl
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.bbl
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.bbl
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.bbl
-INPUT Osnutek_Andraž_Kukovičič_Ježi.bbl
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.out
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.pdf
+OUTPUT Osnutek_Andraž_Kukovičič_jež.bcf
+OUTPUT Osnutek_Andraž_Kukovičič_jež.out
+OUTPUT Osnutek_Andraž_Kukovičič_jež.pdf
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
@@ -235,10 +230,10 @@ INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT Osnutek_Andraž_Kukovičič_Ježi.aux
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.out
-INPUT .\Osnutek_Andraž_Kukovičič_Ježi.out
-OUTPUT Osnutek_Andraž_Kukovičič_Ježi.run.xml
+INPUT Osnutek_Andraž_Kukovičič_jež.aux
+INPUT .\Osnutek_Andraž_Kukovičič_jež.out
+INPUT .\Osnutek_Andraž_Kukovičič_jež.out
+OUTPUT Osnutek_Andraž_Kukovičič_jež.run.xml
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\andra\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
